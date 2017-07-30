@@ -106,11 +106,6 @@
             },
             {
                 "type": "packerator.post_processors.manifestpostprocessor.ManifestPostProcessor"
-            },
-            {
-                "type": "packerator.post_processors.vagrantpostprocessor.VagrantPostProcessor",
-                "keep_input_artifact": true,
-                "output": "{{.Build}}_{{.Provider}}.box"
             }
         ]
     },
