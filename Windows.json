@@ -155,7 +155,7 @@
                 [
                     {
                         "active": true,
-                        "format": "NTFS",
+                        "fstype": "NTFS",
                         "label": "System",
                         "partition_id": "1",
                         "partition_type": "Primary",
