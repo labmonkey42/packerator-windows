@@ -99,7 +99,9 @@
                         "modifyvm",
                         "{{.Name}}",
                         "--nic1",
-                        "bridged"
+                        "bridged",
+                        "--bridgeadapter1",
+                        "eth0"
                     ]
                 ]
             }
