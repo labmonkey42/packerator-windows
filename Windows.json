@@ -154,8 +154,11 @@
                 "partitions":
                 [
                     {
+                        "active": true,
+                        "format": "NTFS",
+                        "label": "System",
                         "partition_id": "1",
-                        "partition_type": "MSR",
+                        "partition_type": "Primary",
                         "size": 128
                     },
                     {
