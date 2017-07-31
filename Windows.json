@@ -76,6 +76,7 @@
             "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
             "vm_name": "Windows",
             "winrm_password": "vagrant",
+            "winrm_port": "5985",
             "winrm_username": "vagrant"
         },
         "items":
