@@ -75,7 +75,7 @@
             "communicator": "winrm",
             "headless": false,
             "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
-            "vm_name": "Windows_{{.BuildName}}",
+            "vm_name": "Windows",
             "winrm_password": "vagrant",
             "winrm_username": "vagrant"
         },
