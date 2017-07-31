@@ -71,7 +71,6 @@
     {
         "global_settings":
         {
-            "boot_wait": "2m",
             "communicator": "winrm",
             "headless": false,
             "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
@@ -87,7 +86,8 @@
                 "tools_upload_flavor": "windows",
                 "vmx_data":
                 {
-                    "firmware": "efi"
+                    "firmware": "efi",
+                    "scsi0.virtualDev": "lsisas1068"
                 }
             },
             {
