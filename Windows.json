@@ -84,7 +84,11 @@
             {
                 "type": "packerator.builders.vmwareisobuilder.VMWareISOBuilder",
                 "builder_id": "vmware",
-                "tools_upload_flavor": "windows"
+                "tools_upload_flavor": "windows",
+                "vmx_data":
+                {
+                    "firmware": "efi"
+                }
             },
             {
                 "type": "packerator.builders.virtualboxisobuilder.VirtualboxISOBuilder",
