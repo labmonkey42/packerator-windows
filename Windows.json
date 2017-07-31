@@ -93,7 +93,7 @@
             {
                 "type": "packerator.builders.virtualboxisobuilder.VirtualboxISOBuilder",
                 "builder_id": "virtualbox",
-                "vbox_manage":
+                "vboxmanage":
                 [
                     ["modifyvm", "{{.Name}}", "--firmware", "efi"]
                 ]
