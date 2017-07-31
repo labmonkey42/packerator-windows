@@ -95,7 +95,7 @@
                 "builder_id": "virtualbox",
                 "vbox_manage":
                 [
-                    ["modify", "{{.Name}}", "--firmware", "efi"]
+                    ["modifyvm", "{{.Name}}", "--firmware", "efi"]
                 ]
             }
         ]
