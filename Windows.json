@@ -86,12 +86,22 @@
                 "tools_upload_flavor": "windows",
                 "vmx_data":
                 {
+                    "ethernet0.connectionType": "bridged",
                     "scsi0.virtualDev": "lsisas1068"
                 }
             },
             {
                 "type": "packerator.builders.virtualboxisobuilder.VirtualboxISOBuilder",
-                "builder_id": "virtualbox"
+                "builder_id": "virtualbox",
+                "vboxmanage":
+                [
+                    [
+                        "modifyvm",
+                        "{{.Name}}",
+                        "--nic1",
+                        "bridged"
+                    ]
+                ]
             }
         ]
     },
