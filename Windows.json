@@ -2,7 +2,7 @@
     "box_type": "packeratorwindows.windowsbox.WindowsBox",
     "machine_type": "packeratorwindows.windowsmachine.WindowsMachine",
     "description": "Generic Windows Packerator template",
-    "machine_name": "WIN-*",
+    "machine_name": "*",
     "min_packer_version": "0.0.1",
     "winrm_password": "vagrant",
     "winrm_username": "vagrant",
