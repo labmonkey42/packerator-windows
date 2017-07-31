@@ -86,17 +86,12 @@
                 "tools_upload_flavor": "windows",
                 "vmx_data":
                 {
-                    "firmware": "efi",
                     "scsi0.virtualDev": "lsisas1068"
                 }
             },
             {
                 "type": "packerator.builders.virtualboxisobuilder.VirtualboxISOBuilder",
-                "builder_id": "virtualbox",
-                "vboxmanage":
-                [
-                    ["modifyvm", "{{.Name}}", "--firmware", "efi"]
-                ]
+                "builder_id": "virtualbox"
             }
         ]
     },
@@ -160,18 +155,11 @@
                 [
                     {
                         "partition_id": "1",
-                        "fstype": "FAT32",
-                        "label": "System",
-                        "partition_type": "EFI",
-                        "size": 100
-                    },
-                    {
-                        "partition_id": "2",
                         "partition_type": "MSR",
                         "size": 128
                     },
                     {
-                        "partition_id": "3",
+                        "partition_id": "2",
                         "bootable": true,
                         "extend": true,
                         "fstype": "NTFS",
