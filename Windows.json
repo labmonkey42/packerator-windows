@@ -4,6 +4,8 @@
     "description": "Generic Windows Packerator template",
     "machine_name": "WIN-*",
     "min_packer_version": "0.0.1",
+    "winrm_password": "vagrant",
+    "winrm_username": "vagrant",
     "autounattend_setup_commands":
     [
 		{
@@ -72,7 +74,9 @@
             "boot_wait": "2m",
             "communicator": "winrm",
             "headless": false,
-            "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\""
+            "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
+            "winrm_password": "vagrant",
+            "winrm_username": "vagrant"
         },
         "items":
         [
